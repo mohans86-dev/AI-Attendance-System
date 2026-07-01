@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="colorPrimary">#FF0D47A1</color>
+    <color name="colorPrimaryDark">#FF002171</color>
+    <color name="colorPrimaryVariant">#FF1565C0</color>
+    <color name="colorAccent">#FF00BFA5</color>
+
+    <!-- Background colors -->
+    <color name="colorBackground">#FF0A0E21</color>
+    <color name="colorSurface">#FF1A1F36</color>
+    <color name="colorSurfaceVariant">#FF252B48</color>
+    <color name="colorCardBackground">#FF1E2444</color>
+
+    <!-- Text colors -->
+    <color name="colorTextPrimary">#FFFFFFFF</color>
+    <color name="colorTextSecondary">#B3FFFFFF</color>
+    <color name="colorTextTertiary">#66FFFFFF</color>
+
+    <!-- Status colors -->
+    <color name="colorSuccess">#FF4CAF50</color>
+    <color name="colorWarning">#FFFFC107</color>
+    <color name="colorError">#FFEF5350</color>
+    <color name="colorInfo">#FF42A5F5</color>
+
+    <!-- Gradient colors -->
+    <color name="gradientStart">#FF1A237E</color>
+    <color name="gradientMiddle">#FF0D47A1</color>
+    <color name="gradientEnd">#FF00838F</color>
+
+    <!-- Card accent colors -->
+    <color name="cardRegister">#FF7C4DFF</color>
+    <color name="cardAttendance">#FF00BFA5</color>
+    <color name="cardRecords">#FF448AFF</color>
+    <color name="cardUsers">#FFFF5252</color>
+
+    <!-- Legacy defaults -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">AI Attendance</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">AI Attendance System</string>
+    <string name="dashboard_subtitle">Smart face recognition attendance</string>
+    <string name="register_face">Register Face</string>
+    <string name="register_face_desc">Add a new person with face recognition</string>
+    <string name="take_attendance">Take Attendance</string>
+    <string name="take_attendance_desc">Scan faces to mark attendance</string>
+    <string name="view_records">View Records</string>
+    <string name="view_records_desc">See historical attendance logs</string>
+    <string name="registered_users">Registered Users</string>
+    <string name="registered_users_desc">Manage registered persons</string>
+    <string name="total_registered">Registered</string>
+    <string name="today_attendance">Today\'s Attendance</string>
+
+    <!-- Register Screen -->
+    <string name="register_title">Register New Face</string>
+    <string name="enter_name_hint">Enter person\'s name</string>
+    <string name="capture_face">Capture Face</string>
+    <string name="position_face">Position your face in the frame</string>
+    <string name="registration_success">Face registered successfully!</string>
+    <string name="registration_failed">Registration failed. Please try again.</string>
+    <string name="name_required">Please enter a name</string>
+    <string name="no_face_detected">No face detected. Please look at the camera.</string>
+
+    <!-- Attendance Screen -->
+    <string name="attendance_title">Take Attendance</string>
+    <string name="scanning">Scanning for faces…</string>
+    <string name="attendance_marked">Attendance marked for %s</string>
+    <string name="already_marked">%s already marked today</string>
+    <string name="face_not_recognized">Face not recognized</string>
+    <string name="no_registered_persons">No persons registered yet. Please register first.</string>
+    <string name="attendance_success_title">Attendance Marked!</string>
+    <string name="attendance_already_title">Already Recorded</string>
+    <string name="attendance_success_message">Has been marked present for today</string>
+    <string name="attendance_already_message">Attendance was already recorded for today</string>
+    <string name="dialog_dismiss">Got it</string>
+
+    <!-- Records Screen -->
+    <string name="records_title">Attendance Records</string>
+    <string name="no_records">No attendance records found</string>
+    <string name="select_date">Select Date</string>
+    <string name="present">Present</string>
+    <string name="export_attendance">Export Attendance</string>
+    <string name="export_selected_date">Selected Date</string>
+    <string name="export_selected_date_desc">Export records for the currently viewed date</string>
+    <string name="export_date_range">Custom Date Range</string>
+    <string name="export_date_range_desc">Choose start and end dates for the report</string>
+    <string name="export_generating">Generating report…</string>
+    <string name="export_no_records">No records found for the selected period</string>
+    <string name="export_success">Report generated successfully</string>
+    <string name="export_failed">Failed to generate report</string>
+    <string name="export_button">Export PDF</string>
+    <string name="export_from">From</string>
+    <string name="export_to">To</string>
+    <string name="print_export">Print / Export</string>
+
+    <!-- General -->
+    <string name="camera_permission_required">Camera permission is required for face recognition</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="switch_camera">Switch Camera</string>
+</resources>
