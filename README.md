@@ -90,7 +90,3 @@ AIAttendanceSystem/
 - Choose **Selected Date** or **Custom Date Range** to compile the PDF.
 - Share or print the generated document directly from the Android Share Sheet.
 
----
-
-## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
