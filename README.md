@@ -60,7 +60,7 @@ AIAttendanceSystem/
 ### Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/AI-Attendance-System.git
+   git clone https://github.com/mohans86-dev/AI-Attendance-System.git
    cd AI-Attendance-System
    ```
 2. Open the project in Android Studio.
