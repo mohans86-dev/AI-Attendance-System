@@ -6,11 +6,17 @@ A modern, offline-first Android application that leverages **Google ML Kit Face 
 
 | Dashboard | Face Registration | Attendance Scanner |
 | :---: | :---: | :---: |
-| ![Dashboard](screenshots/dashboard.png) | ![Face Registration](screenshots/register.png) | ![Attendance Scanner](screenshots/scanner.png) |
+| ![Dashboard](<img width="224" height="498" alt="Screenshot_20260702-103914_AI Attendance" src="https://github.com/user-attachments/assets/6f58d930-ce54-4bd7-8236-26de4caf828a" />
+) | ![Face Registration](<img width="224" height="498" alt="Screenshot_20260702-103939_AI Attendance" src="https://github.com/user-attachments/assets/9ed5738d-2ff9-4121-8f98-258a258320bf" />
+) | ![Attendance Scanner](<img width="224" height="498" alt="Screenshot_20260702-103953_AI Attendance" src="https://github.com/user-attachments/assets/04230bff-301e-4232-8f70-aad3e1005d49" />
+) |
 
 | Attendance Dialog | Attendance Records | PDF Report |
 | :---: | :---: | :---: |
-| ![Attendance Dialog](screenshots/dialog.png) | ![Attendance Records](screenshots/records.png) | ![PDF Report](screenshots/pdf_report.png) |
+| ![Attendance Dialog](<img width="224" height="498" alt="Screenshot_20260702-104204_AI Attendance" src="https://github.com/user-attachments/assets/a3212c14-8b3b-4ab9-90ba-c1624c0899e1" />
+) | ![Attendance Records](<img width="224" height="498" alt="Screenshot_20260702-104000_AI Attendance" src="https://github.com/user-attachments/assets/37397407-6bd5-4db9-b563-809a3b6aa379" />
+) | ![PDF Report](<img width="224" height="208" alt="Screenshot_PDF_report_AI Attendance" src="https://github.com/user-attachments/assets/682c1c5c-06f1-4913-bff3-36150524915c" />
+) |
 
 ## 🚀 Features
 
