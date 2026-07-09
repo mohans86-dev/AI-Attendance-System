@@ -2,6 +2,16 @@
 
 A modern, offline-first Android application that leverages **Google ML Kit Face Detection** and a local **FaceNet TFLite Model** to mark attendance via face recognition.
 
+## 📸 Screenshots
+
+| Dashboard | Face Registration | Attendance Scanner |
+| :---: | :---: | :---: |
+| ![Dashboard](screenshots/dashboard.png) | ![Face Registration](screenshots/register.png) | ![Attendance Scanner](screenshots/scanner.png) |
+
+| Attendance Dialog | Attendance Records | PDF Report |
+| :---: | :---: | :---: |
+| ![Attendance Dialog](screenshots/dialog.png) | ![Attendance Records](screenshots/records.png) | ![PDF Report](screenshots/pdf_report.png) |
+
 ## 🚀 Features
 
 - 👤 **Face Registration**: Capture new faces, extract 128-dimension embeddings, and register profiles with names locally.

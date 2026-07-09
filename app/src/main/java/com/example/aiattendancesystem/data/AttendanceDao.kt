@@ -27,6 +27,12 @@ interface AttendanceDao {
     @Delete
     suspend fun deletePerson(person: Person)
 
+    @Query("SELECT * FROM persons WHERE name = :name")
+    suspend fun getPersonsByName(name: String): List<Person>
+
+    @androidx.room.Update
+    suspend fun updatePerson(person: Person)
+
     // ── Attendance operations ──
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

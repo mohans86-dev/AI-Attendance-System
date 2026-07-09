@@ -170,23 +170,85 @@ class RegisterActivity : AppCompatActivity() {
 
         isProcessing = true
         binding.btnCapture.isEnabled = false
-        binding.tvStatus.text = "Registering..."
+        binding.tvStatus.text = "Confirming registration..."
 
+        showConfirmationDialog(name, faceResult)
+    }
+
+    private fun showConfirmationDialog(name: String, faceResult: FaceResult) {
+        val dialogView = layoutInflater.inflate(R.layout.dialog_confirm_registration, null)
+        val ivFacePreview = dialogView.findViewById<android.widget.ImageView>(R.id.ivFacePreview)
+        val tvConfirmName = dialogView.findViewById<android.widget.TextView>(R.id.tvConfirmName)
+        val btnConfirmRetake = dialogView.findViewById<android.widget.TextView>(R.id.btnConfirmRetake)
+        val btnConfirmSave = dialogView.findViewById<android.widget.TextView>(R.id.btnConfirmSave)
+
+        ivFacePreview.setImageBitmap(faceResult.faceBitmap)
+        tvConfirmName.text = name
+
+        val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
+            .setView(dialogView)
+            .setCancelable(false)
+            .create()
+
+        dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        btnConfirmRetake.setOnClickListener {
+            dialog.dismiss()
+            isProcessing = false
+            binding.btnCapture.isEnabled = true
+            binding.tvStatus.text = getString(R.string.position_face)
+        }
+
+        btnConfirmSave.setOnClickListener {
+            dialog.dismiss()
+            saveProfile(name, faceResult)
+        }
+
+        dialog.show()
+    }
+
+    private fun saveProfile(name: String, faceResult: FaceResult) {
+        binding.tvStatus.text = "Registering..."
         lifecycleScope.launch(Dispatchers.IO) {
             try {
-                val person = Person(
-                    name = name,
-                    faceEmbedding = faceResult.embedding
-                )
-                val personId = database.attendanceDao().insertPerson(person)
+                // Check if any person with the exact same name exists in the database
+                val existingPersons = database.attendanceDao().getPersonsByName(name)
+                var matchedPerson: Person? = null
 
-                // Save the cropped face image
+                // Compare embeddings to see if it's the same person
+                for (person in existingPersons) {
+                    val distance = faceNetModel.compareFaces(faceResult.embedding, person.faceEmbedding)
+                    if (distance < 1.0f) { // Threshold for same person
+                        matchedPerson = person
+                        break
+                    }
+                }
+
+                val personId: Long
+                if (matchedPerson != null) {
+                    // Update/Replace existing person's face embedding
+                    val updatedPerson = matchedPerson.copy(
+                        faceEmbedding = faceResult.embedding,
+                        registeredAt = System.currentTimeMillis()
+                    )
+                    database.attendanceDao().updatePerson(updatedPerson)
+                    personId = matchedPerson.id
+                } else {
+                    // Save as a new registration
+                    val newPerson = Person(
+                        name = name,
+                        faceEmbedding = faceResult.embedding
+                    )
+                    personId = database.attendanceDao().insertPerson(newPerson)
+                }
+
+                // Overwrite/Save the cropped face image
                 saveFaceImage(faceResult.faceBitmap, personId)
 
                 runOnUiThread {
                     Toast.makeText(
                         this@RegisterActivity,
-                        getString(R.string.registration_success),
+                        if (matchedPerson != null) "Profile updated successfully" else getString(R.string.registration_success),
                         Toast.LENGTH_SHORT
                     ).show()
                     finish()

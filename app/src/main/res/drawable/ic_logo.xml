@@ -98,10 +98,10 @@
     <!-- Glowing Attendance Checkmark (Bottom-Right overlays) -->
     <!-- Checkmark Circle Badge -->
     <path
-        android:pathData="M 72,72 A 12,12 0 1,1 71.9,72 Z"
+        android:pathData="M 72,60 A 12,12 0 1,1 71.99,60 Z"
         android:fillColor="#FF0A0E21" />
     <path
-        android:pathData="M 72,72 A 12,12 0 1,1 71.9,72 Z"
+        android:pathData="M 72,60 A 12,12 0 1,1 71.99,60 Z"
         android:strokeWidth="2"
         android:strokeColor="#FF4CAF50"
         android:fillColor="#FF4CAF50" />

@@ -27,8 +27,8 @@
                 android:id="@+id/ivAppLogo"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/ic_logo"
-                android:contentDescription="@string/app_name" />
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_logo" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -58,6 +58,7 @@
 
             <!-- Registered Count -->
             <LinearLayout
+                android:id="@+id/totalRegisteredCard"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/spacing_sm"
@@ -86,6 +87,7 @@
 
             <!-- Today's Attendance Count -->
             <LinearLayout
+                android:id="@+id/allRecordsCard"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/spacing_sm"

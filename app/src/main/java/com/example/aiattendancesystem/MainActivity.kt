@@ -37,6 +37,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupClickListeners() {
+        binding.totalRegisteredCard.setOnClickListener {
+            startActivity(Intent(this, RegisteredUsersActivity::class.java))
+        }
+
+        binding.allRecordsCard.setOnClickListener {
+            startActivity(Intent(this, RecordsActivity::class.java))
+        }
+
         binding.cardRegister.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
