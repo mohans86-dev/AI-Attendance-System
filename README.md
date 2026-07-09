@@ -4,19 +4,45 @@ A modern, offline-first Android application that leverages **Google ML Kit Face 
 
 ## 📸 Screenshots
 
-| Dashboard | Face Registration | Attendance Scanner |
-| :---: | :---: | :---: |
-| ![Dashboard](<img width="224" height="498" alt="Screenshot_20260702-103914_AI Attendance" src="https://github.com/user-attachments/assets/6f58d930-ce54-4bd7-8236-26de4caf828a" />
-) | ![Face Registration](<img width="224" height="498" alt="Screenshot_20260702-103939_AI Attendance" src="https://github.com/user-attachments/assets/9ed5738d-2ff9-4121-8f98-258a258320bf" />
-) | ![Attendance Scanner](<img width="224" height="498" alt="Screenshot_20260702-103953_AI Attendance" src="https://github.com/user-attachments/assets/04230bff-301e-4232-8f70-aad3e1005d49" />
-) |
+<div align="center">
 
-| Attendance Dialog | Attendance Records | PDF Report |
-| :---: | :---: | :---: |
-| ![Attendance Dialog](<img width="224" height="498" alt="Screenshot_20260702-104204_AI Attendance" src="https://github.com/user-attachments/assets/a3212c14-8b3b-4ab9-90ba-c1624c0899e1" />
-) | ![Attendance Records](<img width="224" height="498" alt="Screenshot_20260702-104000_AI Attendance" src="https://github.com/user-attachments/assets/37397407-6bd5-4db9-b563-809a3b6aa379" />
-) | ![PDF Report](<img width="224" height="208" alt="Screenshot_PDF_report_AI Attendance" src="https://github.com/user-attachments/assets/682c1c5c-06f1-4913-bff3-36150524915c" />
-) |
+<table>
+  <tr>
+    <th>🏠 Dashboard</th>
+    <th>👤 Face Registration</th>
+    <th>📷 Attendance Scanner</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/6f58d930-ce54-4bd7-8236-26de4caf828a" width="220"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/9ed5738d-2ff9-4121-8f98-258a258320bf" width="220"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/04230bff-301e-4232-8f70-aad3e1005d49" width="220"/>
+    </td>
+  </tr>
+
+  <tr>
+    <th>✅ Attendance Dialog</th>
+    <th>📋 Attendance Records</th>
+    <th>📄 PDF Report</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/a3212c14-8b3b-4ab9-90ba-c1624c0899e1" width="220"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/37397407-6bd5-4db9-b563-809a3b6aa379" width="220"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/682c1c5c-06f1-4913-bff3-36150524915c" width="220"/>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ## 🚀 Features
 
